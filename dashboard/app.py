@@ -9,6 +9,7 @@ warnings.filterwarnings('ignore')
 
 # Base directory of this script (used for all file paths)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ASSETS_DIR = os.path.join(BASE_DIR, '..', 'assets', 'charts')
 
 # page configuration - must be first streamlit command
 st.set_page_config(
@@ -146,6 +147,41 @@ with col_right:
     plt.tight_layout()
     st.pyplot(fig2)
     plt.close()
+
+st.markdown("---")
+
+# Detailed Analysis Charts from EDA
+st.subheader("📈 Detailed Analysis Charts")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("**Top 15 States by Child Stunting Rate**")
+    st.image(os.path.join(ASSETS_DIR, '01_stunting_by_state.png'), use_container_width=True)
+
+with col2:
+    st.markdown("**Child vs Women Anaemia — Top 15 States**")
+    st.image(os.path.join(ASSETS_DIR, '02_anaemia_comparison.png'), use_container_width=True)
+
+col3, col4 = st.columns(2)
+
+with col3:
+    st.markdown("**Correlation Between Health Indicators**")
+    st.image(os.path.join(ASSETS_DIR, '03_correlation_heatmap.png'), use_container_width=True)
+
+with col4:
+    st.markdown("**District-Level Stunting: Best vs Worst**")
+    st.image(os.path.join(ASSETS_DIR, '04_best_worst_districts.png'), use_container_width=True)
+
+col5, col6 = st.columns(2)
+
+with col5:
+    st.markdown("**Sanitation vs Child Stunting (Color = Women Literacy)**")
+    st.image(os.path.join(ASSETS_DIR, '05_sanitation_vs_stunting.png'), use_container_width=True)
+
+with col6:
+    st.markdown("**Optimal Clusters — Elbow & Silhouette Analysis**")
+    st.image(os.path.join(ASSETS_DIR, '06_optimal_clusters.png'), use_container_width=True)
 
 st.markdown("---")
 
