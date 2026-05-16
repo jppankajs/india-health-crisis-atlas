@@ -42,4 +42,4 @@ streamlit run app.py
 **Pankaj**
 BCA Analytics | Kristu Jayanti university, Bengaluru   
  Built a 🏥 India Health Crisis Atlas project.
- GitHub: https://github.com/jppankajs
+   GitHub: https://github.com/jppankajs
