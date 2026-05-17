@@ -1,5 +1,3 @@
----
-
 ## 🚀 How to Run
 
 ```bash
@@ -40,6 +38,6 @@ streamlit run app.py
 ## 👤 Author
 
 **Pankaj**
-BCA Analytics | Kristu Jayanti university, Bengaluru
-Built a 🏥India Health Crisis Atlas project.
-GitHub: https://github.com/jppankajs
+BCA Analytics | Kristu Jayanti university, Bengaluru   
+ Built a 🏥 India Health Crisis Atlas project.      
+ GitHub: https://github.com/jppankajs
